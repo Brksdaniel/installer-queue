@@ -1,23 +1,21 @@
-# 🚀 Instalador em Fila para Windows
+Instalador em Fila para Windows
 
 Instalador automático que instala programas sequencialmente via **winget** com verificação de versões.
+Características
 
-## ✨ Características
+-  Instalação sequencial (um por vez)
+-  Verifica se já está instalado
+- Mostra versão 
+- Timeout de 10 minutos por pacote
+- Emojis para visualizar status
 
-- ✅ Instalação sequencial (um por vez)
-- ✅ Verifica se já está instalado
-- ✅ Mostra versão instalada
-- ✅ Relatório JSON ao final
-- ✅ Timeout de 10 minutos por pacote
-- ✅ Emojis para visualizar status
-
-## 🛠️ Requisitos
+Requisitos
 
 - Windows 10/11
 - Python 3.8+
 - `winget` instalado (vem com Windows 11)
 
-## 📦 Instalação
+ Instalação
 
 ```bash
 # Clonar repositório
@@ -25,7 +23,7 @@ git clone https://github.com/Brksdaniel/installer-queue.git
 cd installer-queue
 ```
 
-## 🚀 Como Usar
+Como Usar
 
 ### 1. Customizar os programas
 
@@ -80,18 +78,10 @@ O instalador gera um arquivo `installation_report.json` com o resultado de cada 
 ]
 ```
 
-## 📊 Status Possíveis
+ Status Possíveis
 
-- ✅ `success` - Instalado com sucesso
-- ⊘ `skipped` - Já estava instalado
-- ❌ `failed` - Erro durante instalação
-- ⏱️ `timeout` - Instalação demorou muito
-- ⚠️ `error` - Exceção durante processo
-
-## 👨‍💻 Autor
-
-Criado por **Brksdaniel**
-
-## 📝 Licença
-
-MIT
+-  `success` - Instalado com sucesso
+- `skipped` - Já estava instalado
+-  `failed` - Erro durante instalação
+-  `timeout` - Instalação demorou muito
+- `error` - Exceção durante processo

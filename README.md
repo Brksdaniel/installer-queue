@@ -62,7 +62,7 @@ winget search Spotify
 python installer.py
 ```
 
-## 📄 Saída
+Saída
 
 O instalador gera um arquivo `installation_report.json` com o resultado de cada instalação:
 
